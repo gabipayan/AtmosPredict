@@ -10,7 +10,7 @@ class City {
     this.id = id;
   }
 };
-// TODO: Complete the HistoryService class
+// TODO: Complete the HistoryService class 
 class HistoryService {
 
   // TODO: Define a read method that reads from the searchHistory.json file
