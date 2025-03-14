@@ -17,11 +17,11 @@ router.post('/', async (req: Request, res: Response) => {
     //console.log(weatherForCity);
 
 
-    // TODO: save city to search history 
+    // TODO: save city to search history
     HistoryService.saveCity(city);
     res.json(weatherForCity);
   } catch (error) {
-    // Handle error here
+    // Handle error here and send 500 status code
     console.error(error);
     res.status(500).send('Internal server error');
   }
