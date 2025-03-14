@@ -17,7 +17,7 @@ router.post('/', async (req: Request, res: Response) => {
     //console.log(weatherForCity);
 
 
-    // TODO: save city to search history
+    // TODO: save city to search history 
     HistoryService.saveCity(city);
     res.json(weatherForCity);
   } catch (error) {
