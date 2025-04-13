@@ -60,6 +60,7 @@ class WeatherService {
         throw new Error('Failed to fetch valid JSON data');
       }
       const data = await response.json();
+    //  console.log('Fetched data:', data);
       return data;
     } catch (error) {
       console.error('Error fetching location data:', error);
@@ -120,7 +121,19 @@ class WeatherService {
     if (!forecastData || !forecastData.list) {
       throw new Error('Invalid forecast data structure');
     }
-    const forecastArray = forecastData.list.map((forecast: any) => {
+   // console.log("Forecast Data:", forecastData);
+    // filter out the data for the next 5 days
+    const filteredForecast = forecastData.list.filter((forecast: any) => {
+      // we have to pass a testing condition inorder to KEEP the record 
+      let item = forecast.dt_txt.split(' ')[1];  // ['2023-10-01', '12:00:00']
+      if (item === '12:00:00') {
+        return item;
+      }
+    });
+
+    //console.log("Filtered Forecast:", filteredForecast);
+
+    const forecastArray = filteredForecast.map((forecast: any) => {
       const { dt, weather, main } = forecast;
       const { description, icon } = weather[0];
       const {speed} = forecast.wind;

@@ -1,22 +1,14 @@
 [
   {
-    "id": "0"
-  },
-  {
-    "id": "1"
-  },
-  {
-    "id": "2"
-  },
-  {
-    "id": "3"
-  },
-  {
-    "name": "San Francisco",
-    "id": "5"
-  },
-  {
     "name": "Merida",
-    "id": "5"
+    "id": "6"
+  },
+  {
+    "name": "San Diego",
+    "id": "7"
+  },
+  {
+    "name": "Cancun",
+    "id": "2"
   }
 ]
