@@ -3,6 +3,9 @@
 ## Description
 
 This weather dashboard application utilizes the OpenWeather API to fetch and display real-time weather data directly in the browser. Designed for travelers, it provides weather forecasts for multiple cities, enabling users to plan their trips more effectively based on current and upcoming weather conditions.
+[AtmosPredict](https://atmospredict.onrender.com)
+![This is how it looks!](https://github.com/user-attachments/assets/d5970bb6-b1e4-4c6a-98b0-26be27034446)
+
 
 ## Table of Contents
 - [Description](#description)
